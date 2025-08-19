@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+
+<body>
+  <div class="bg-white flex h[60vh]">
+    <!-- Sidebar -->
+
+    <div class=" h[60vh] w-[20rem]">
+      <h1 class="bg-white text-black py-6 ml-[5rem] font-bold">Sizes</h1>
+
+      <div>
+        <button class="border-1 w-10 h-10 rounded-full bg-gray-200 ml-[5rem]">XS</button>
+        <button class="border-1 w-10 h-10 rounded-full bg-gray-200 ">S</button>
+        <button class="border-1 w-10 h-10 rounded-full bg-gray-200 ">M</button>
+        <button class="border-1 w-10 h-10 rounded-full bg-gray-200 ">L</button>
+        <button class="border-1 w-10 h-10 rounded-full bg-gray-200 ml-[5rem] mt-[1rem]">XL</button>
+        <button class="border-1 w-10 h-10 rounded-full bg-gray-200">XXL</button>
+
+
+      </div>
+      <br>
+      <p class="ml-[5rem]">Leave a star if this repository was useful useful on GitHub :)</p>
+      <button class="ml-[5rem] mt-[5px] border-1 p-2"><i class="fa-regular fa-star"></i>Star</button>
+      <span><button class="border-1 p-2">848</button></span>
+
+    </div>
+
+    <div class="bg-white h-[60vh] w-[80rem]">
+      <!-- Main page -->
+      <div class="flex justify-between py-6">
+        <p>16 product(s) found</p>
+        <div>
+          Order by
+        </div>
+
+        <div class="grid grid-cols-4 bg-white">
+<span class="shipping">Free shipping</span>
+            <!-- First product -->
+             <img src="data:image/jpeg;base64,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"
+             alt="Img" />
+             <h4>Cat Tee Black T-Shirt</h4>
+             <p class="price">$10.90<br><small>or 9 × $1.21</small></p>
+             <button>Add to cart</button>
+            </div>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Products -->
+    <div class="text">
+      <div class="orange">
+        <span>16 Product(s) found.</span>
+
+        <div class="sort">
+
+
+          <!-- Product sort -->
+          Order by <span><button>Select</button></span>
+          <select id="sort">
+            Select
+            Price Low to High
+            Price High to Low
+          </select>
+        </div>
+      </div>
+      <div class="products">
+
+        <div class="first-product">
+
+
+          <!-- Second product -->
+          <div class="product">
+            <span class="shipping">Free shipping</span>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="img" />
+            <h4>Dark Thug Blue-Navy T-Shirt</h4>
+            <p class="price">$29.45<br><small>or 5 × $5.89</small></p>
+            <button>Add to cart</button>
+          </div>
+
+          <!-- Third product -->
+          <div class="product">
+            <span class="shipping">Free shipping</span>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="img" />
+            <h4>Sphynx Tie Dye Wine T-Shirt</h4>
+            <p class="price">$9.00<br><small>or 3 × $3.00</small></p>
+            <button>Add to cart</button>
+          </div>
+
+          <!-- Fourth product -->
+          <div class="product">
+            <span class="shipping">Free shipping</span>
+            <!-- <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img"/> -->
+            <h4>Skuul</h4>
+            <p class="price">$14.00<br><small>or 5 × $2.80</small></p>
+            <button>Add to cart</button>
+          </div>
+        </div>
+
+        <!-- Fifth product -->
+        <div class="second-product">
+          <div class="product">
+            <!-- <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img"/> -->
+            <h3>Cat Tee Black T-Shirt</h3>
+            <p>$10.90</p>
+            <p>or 9 x $1.21</p>
+            <button>Add to cart</button>
+          </div>
+
+          <!-- Sixth product -->
+          <div class="product">
+            <!-- <img src="https://images.unsplash.com/photo-1610890943255-580c6bc67e77?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img"/> -->
+            <h3>Dark Thug Blue-Navy T-Shirt</h3>
+            <p>$29.45</p>
+            <p>or 5 x $5.89</p>
+            <button>Add to cart</button>
+          </div>
+
+          <!-- Seventh product -->
+          <div class="product">
+            <h3>Sphynx Tie Dye Wine T-Shirt</h3>
+            <p>$9.00</p>
+            <p>or 3 x $3.00</p>
+            <button>Add to cart</button>
+          </div>
+
+          <!-- Eighth product -->
+          <div class="product">
+            <h3>Sphynx Tie Dye Wine T-Shirt</h3>
+            <p>$9.00</p>
+            <p>or 3 x $3.00</p>
+            <button>Add to cart</button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Shopping card</title>
+</head>
+
+<body>
+    <!-- shopping card container -->
+    <div class="bg-white flex h[60vh]">
+
+        <!-- side bar -->
+        <div class="bg-white w-[20rem] h-[60vh] ">
+            <h1 class="bg-white text-black py-6 ml-[5rem] font-bold">SIZES</h1>
+
+            <div>
+                <button class="border-1 w-10 h-10 rounded-full bg-gray-200 ml-[5rem]">XS</button>
+                <button class="border-1 w-10 h-10 rounded-full bg-gray-200">S</button>
+                <button class="border-1 w-10 h-10 rounded-full bg-gray-200">M</button>
+                <button class="border-1 w-10 h-10 rounded-full bg-gray-200">ML</button><br><br>
+                <button class="border-1 w-10 h-10 rounded-full bg-gray-200 ml-[5rem]">L</button>
+                <button class="border-1 w-10 h-10 rounded-full bg-gray-200">XL</button>
+                <button class="border-1 w-10 h-10 rounded-full bg-gray-200">XXL</button>
+            </div>
+            <br>
+            <p class="ml-[5rem]">Leave a star on Github if this responsitory was useful</p>
+            <button class="ml-[5rem] border-1"><i class="fas fa-star">star</i></button>
+
+
+        </div>
+
+        <!-- main-page-card -->
+
+        6<div class="bg-white w-[80rem] h-[60vh] ">
+            <div class="flex justify-between py-6">
+                <p>16 product(s) found</p>
+                <div>Order by</div>
+            </div>
+
+            <div class="grid grid-cols-4 bg-white">
+                <!-- row 1 -->
+
+                <div>
+                    <!-- card 1 -->
+                    <div>
+                        <button class="bg-black text-white right-0 ">Free shipping</button>
+                        <img src="shopping/dress 1.jpg" alt="">
+                    </div>
+                    <p class="text-center text-black">Brown Top and Down</p>
+                    <hr class="text-yellow-500 font-extrabold place-self-center w-[3rem] mx-20">
+                    <p class="text-center text-black">$<strong class="text-2xl">10</strong></p>
+                    <p class="text-center opacity-30 mb-3">or 9 x$1.21</p>
+                    <button class="border-1 px-10 w-full bg-black text-white py-3">Add to cart</button>
+                </div>
+
+
+                <!--  card 2 -->
+
+                <div>
+                    <div>
+                        <button class="bg-black text-white right-0 ">Free shipping</button>
+                        <img src="shopping/new2.jpg" alt="">
+                    </div>
+
+                    <p class="text-center text-black">Black Top</p>
+                    <hr class="text-yellow-500 font-extrabold place-self-center w-[3rem] mx-20">
+                    <p class="text-center text-black">$<strong class="text-2xl">10</strong></p>
+                    <p class="text-center opacity-30 mb-3">or 9 x$1.21</p>
+                    <button class="border-1 px-10 w-full bg-black text-white py-3">Add to cart</button>
+                </div>
+
+                <!-- card 3 -->
+
+                <div>
+                    <div>
+                        <button class="bg-black text-white w-[10rem] ">Free shipping</button>
+                        <img src="shopping/new3.jpg" alt="">
+                    </div>
+                    <p class="text-center text-black">Brown Top and Down</p>
+                    <hr class="text-yellow-500 font-extrabold place-self-center w-[3rem] mx-20">
+                    <p class="text-center text-black">$<strong class="text-2xl">10</strong></p>
+                    <p class="text-center opacity-30 mb-3">or 9 x$1.21</p>
+                    <button class="border-1 px-10 w-full bg-black text-white py-3">Add to cart</button>
+                </div>
+
+                <!-- card 4 -->
+
+                <div>
+                    <div>
+                        <button class="bg-black text-white w-[10rem] ">Free shipping</button>
+                        <img src="shopping/new.jpg" alt="">
+                    </div>
+                    <p class="text-center text-black">Brown Top and Down</p>
+                    <hr class="text-yellow-500 font-extrabold place-self-center w-[3rem] mx-20">
+                    <p class="text-center text-black">$<strong class="text-2xl">10</strong></p>
+                    <p class="text-center opacity-30 mb-3">or 9 x$1.21</p>
+                    <button class="border-1 px-10 w-full bg-black text-white py-3">Add to cart</button>
+                </div>
+
+                <!-- card 5 -->
+
+                <div>
+                    <div>
+                        <button class="bg-black text-white w-[10rem] ">Free shipping</button>
+                        <img src="shopping/new.jpg" alt="">
+                    </div>
+                    <p class="text-center text-black">Brown Top and Down</p>
+                    <hr class="text-yellow-500 font-extrabold place-self-center w-[3rem] mx-20">
+                    <p class="text-center text-black">$<strong class="text-2xl">10</strong></p>
+                    <p class="text-center opacity-30 mb-3">or 9 x$1.21</p>
+                    <button class="border-1 px-10 w-full bg-black text-white py-3">Add to cart</button>
+                </div>
+
+                <!-- card 6 -->
+
+                <div>
+                    <div>
+                        <button class="bg-black text-white w-[10rem] ">Free shipping</button>
+                        <img src="shopping/new.jpg" alt="">
+                    </div>
+                    <p class="text-center text-black">Brown Top and Down</p>
+                    <hr class="text-yellow-500 font-extrabold place-self-center w-[3rem] mx-20">
+                    <p class="text-center text-black">$<strong class="text-2xl">10</strong></p>
+                    <p class="text-center opacity-30 mb-3">or 9 x$1.21</p>
+                    <button class="border-1 px-10 w-full bg-black text-white py-3">Add to cart</button>
+                </div>
+
+                <!-- card 7 -->
+
+                <div>
+                    <div>
+                        <button class="bg-black text-white w-[10rem] ">Free shipping</button>
+                        <img src="shopping/new.jpg" alt="">
+                    </div>
+                    <p class="text-center text-black">Brown Top and Down</p>
+                    <hr class="text-yellow-500 font-extrabold place-self-center w-[3rem] mx-20">
+                    <p class="text-center text-black">$<strong class="text-2xl">10</strong></p>
+                    <p class="text-center opacity-30 mb-3">or 9 x$1.21</p>
+                    <button class="border-1 px-10 w-full bg-black text-white py-3">Add to cart</button>
+                </div>
+
+                <div>
+                    <div>
+                        <button class="bg-black text-white w-[10rem] ">Free shipping</button>
+                        <img src="shopping/new.jpg" alt="">
+                    </div>
+                    <p class="text-center text-black">Brown Top and Down</p>
+                    <hr class="text-yellow-500 font-extrabold place-self-center w-[3rem] mx-20">
+                    <p class="text-center text-black">$<strong class="text-2xl">10</strong></p>
+                    <p class="text-center opacity-30 mb-3">or 9 x$1.21</p>
+                    <button class="border-1 px-10 w-full bg-black text-white py-3">Add to cart</button>
+                </div>
+
+                <div>
+                    <div>
+                        <button class="bg-black text-white w-[10rem] ">Free shipping</button>
+                        <img src="shopping/new.jpg" alt="">
+                    </div>
+                    <p class="text-center text-black">Brown Top and Down</p>
+                    <hr class="text-yellow-500 font-extrabold place-self-center w-[3rem] mx-20">
+                    <p class="text-center text-black">$<strong class="text-2xl">10</strong></p>
+                    <p class="text-center opacity-30 mb-3">or 9 x$1.21</p>
+                    <button class="border-1 px-10 w-full bg-black text-white py-3">Add to cart</button>
+                </div>
+
+                <div>
+                    <div>
+                        <button class="bg-black text-white w-[10rem] ">Free shipping</button>
+                        <img src="shopping/new.jpg" alt="">
+                    </div>
+                    <p class="text-center text-black">Brown Top and Down</p>
+                    <hr class="text-yellow-500 font-extrabold place-self-center w-[3rem] mx-20">
+                    <p class="text-center text-black">$<strong class="text-2xl">10</strong></p>
+                    <p class="text-center opacity-30 mb-3">or 9 x$1.21</p>
+                    <button class="border-1 px-10 w-full bg-black text-white py-3">Add to cart</button>
+                </div>
+
+                <div>
+                    <div>
+                        <button class="bg-black text-white w-[10rem] ">Free shipping</button>
+                        <img src="shopping/new.jpg" alt="">
+                    </div>
+                    <p class="text-center text-black">Brown Top and Down</p>
+                    <hr class="text-yellow-500 font-extrabold place-self-center w-[3rem] mx-20">
+                    <p class="text-center text-black">$<strong class="text-2xl">10</strong></p>
+                    <p class="text-center opacity-30 mb-3">or 9 x$1.21</p>
+                    <button class="border-1 px-10 w-full bg-black text-white py-3">Add to cart</button>
+                </div>
+
+                <div>
+                    <div>
+                        <button class="bg-black text-white w-[10rem] ">Free shipping</button>
+                        <img src="shopping/new.jpg" alt="">
+                    </div>
+                    <p class="text-center text-black">Brown Top and Down</p>
+                    <hr class="text-yellow-500 font-extrabold place-self-center w-[3rem] mx-20">
+                    <p class="text-center text-black">$<strong class="text-2xl">10</strong></p>
+                    <p class="text-center opacity-30 mb-3">or 9 x$1.21</p>
+                    <button class="border-1 px-10 w-full bg-black text-white py-3">Add to cart</button>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
